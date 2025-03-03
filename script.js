@@ -1,6 +1,25 @@
 var image = document.querySelectorAll('.image-gallery img')
 var btnNext1 = document.querySelector('#btnNext')
 var btnPrev1 = document.querySelector('#btnPrev')
+const navItems = document.querySelectorAll(".links a");
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById("menuIcon");
+    const navLinks = document.getElementById("navLinks");
+    menuIcon.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+    });
+});
+
+navItems.forEach((item) => {
+    item.addEventListener("click", function () {
+        navLinks.classList.remove("active"); 
+        window.location.href = "index.html";
+    });
+});
+
 
 var count=0
 
@@ -38,3 +57,5 @@ setInterval(() => {
         image.style.transform=`translateX(-${counter*100}%)`
     })
 },5000);
+
+

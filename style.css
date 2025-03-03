@@ -21,6 +21,9 @@
     padding: 20px;
     color: white;
 }
+.header i{
+    display: none;
+}
 .header .links {
     display: flex;
     align-items: center;
@@ -164,4 +167,101 @@
     border: 2px solid black;
     color: black;
     font-weight: 530;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 3px 2%;
+        flex-direction: column;
+    }
+    .header .links {
+        gap: 20px;
+        flex-direction: row !important;
+    }
+    .header .links a {
+        flex-direction: row !important;
+        font-size: 14px;
+    }
+    .header .links button {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+    .home .image-gallery {
+        width: 50%;
+        height: 400px;
+    }
+    .home .content {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+    .home .content p {
+        margin-right: 0;
+        font-size: 16px;
+    }
+    .home .content button {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        padding: 15px 5%;
+        text-align: center;
+    }
+    .header .links {
+        display: none;
+        flex-direction: column !important;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.418);
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 100;
+    }
+    .links a, .links button {
+        display: block;
+        padding: 10px;
+    }
+    .links.active {
+        display: flex;
+    }
+    .header i{
+        display: flex;
+        font-size: 20px;
+    }
+    .home {
+        padding: 30px 10px;
+    }
+    .home .image-gallery {
+        width: 100%;
+        height: 350px;
+    }
+    .home .content {
+        width: 100%;
+        padding: 10px;
+    }
+    .home .content p {
+        font-size: 15px;
+    }
+    .home .content button {
+        font-size: 13px;
+        padding: 7px 15px;
+    }
+    #btnPrev, #btnNext {
+        font-size: 20px;
+    }
 }
