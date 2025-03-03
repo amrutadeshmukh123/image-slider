@@ -241,7 +241,8 @@
     }
     .header i{
         display: flex;
-        font-size: 20px;
+        font-size: 22px;
+        color: white;
     }
     .home {
         padding: 30px 10px;
@@ -259,7 +260,7 @@
     }
     .home .content button {
         font-size: 13px;
-        padding: 7px 15px;
+        padding: 9px 16px;
     }
     #btnPrev, #btnNext {
         font-size: 20px;
