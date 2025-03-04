@@ -187,10 +187,11 @@
         font-size: 14px;
     }
     .home {
+        width: 100%;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 50px 20px;
     }
     .home .image-gallery {
         width: 50%;
@@ -255,8 +256,16 @@
         width: 100%;
         padding: 10px;
     }
+    .home .content h1{
+        color: black;
+
+    }
+    .home .content h2{
+        color: black;
+    }
     .home .content p {
         font-size: 15px;
+        color: black;
     }
     .home .content button {
         font-size: 13px;
